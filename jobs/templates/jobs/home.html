@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -43,7 +44,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="#">LinkedIn</a>
-                <a class="nav-item nav-link" href="#">Resume</a>
+                <a class="nav-item nav-link" href="{% static 'Portfolio.pdf' %}">Resume</a>
                 <a class="nav-item nav-link" href="{% url 'blogs' %}">Blog</a>
                 </div>
             </div>
@@ -62,6 +63,7 @@
         <a href="mailto:rizkysampratama@gmail.com" class="btn btn-primary my-2">Email Me</a>
         <!-- <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
       </p>
+      <img src="{% static 'sam.jpg' %}" alt="">
     </div>
   </section>
 
